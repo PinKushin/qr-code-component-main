@@ -1,0 +1,61 @@
+﻿@import "reset.css";
+
+:root
+{
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+}
+
+html
+{
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(15px 19px 26px);
+}
+
+body
+{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+#qr-code
+{
+    border-radius: 10px;
+}
+
+.bg-page
+{
+    background: var(--lightGray);
+}
+
+.bg-card
+{
+    background: var(--white);
+}
+
+.card-size
+{
+    width: clamp(20em, 20em, 50vw);
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+}
+
+.cta-title
+{
+    color: var(--darkBlue);
+    padding-top: 1em;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.cta-text
+{
+    color: var(--grayishBlue);
+    padding: 1em;
+}
